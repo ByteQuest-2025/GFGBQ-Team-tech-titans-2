@@ -1,5 +1,6 @@
 # GFGBQ-Team-tech-titans-2
 Repository for tech-titans-2 - Vibe Coding Hackathon
+<<<<<<< HEAD
 AI models are smooth talkers, but they often "gaslight" users with fake facts and imaginary citations. Veri-vibe is a real-time verification layer that catches AI lies before you believe them.
 
 The Problem
@@ -30,3 +31,7 @@ Database Search: Semantic Scholar API, Crossref API, Wikipedia API
 Frontend: Streamlit / React (for the "Vibe" dashboard)
 
 
+=======
+
+ AI Hallucination and Citation Verification System - PS 03 - AIML
+>>>>>>> 17d7cd27393e6b1b38fce41c076d583224e29abd
