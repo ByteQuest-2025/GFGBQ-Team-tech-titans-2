@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Download, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 
@@ -69,21 +70,35 @@ function ExportButton({ results }) {
 
   return (
     <div className="flex gap-3">
-      <button
+      <motion.button
         onClick={handleCopyResults}
         className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        {copied ? <Check size={18} className="text-green-600" /> : <Copy size={18} />}
+        <motion.div
+          animate={{ rotate: copied ? 360 : 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          {copied ? <Check size={18} className="text-green-600" /> : <Copy size={18} />}
+        </motion.div>
         {copied ? 'Copied!' : 'Copy Summary'}
-      </button>
+      </motion.button>
       
-      <button
+      <motion.button
         onClick={handleExportJSON}
         className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
+        whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(59, 130, 246, 0.4)" }}
+        whileTap={{ scale: 0.95 }}
       >
-        <Download size={18} />
+        <motion.div
+          whileHover={{ y: 2 }}
+          transition={{ repeat: Infinity, duration: 0.5, repeatType: "reverse" }}
+        >
+          <Download size={18} />
+        </motion.div>
         Export JSON
-      </button>
+      </motion.button>
     </div>
   );
 }
