@@ -3,6 +3,7 @@ import Header from './components/Header';
 import InputForm from './components/InputForm';
 import ResultsDisplay from './components/ResultsDisplay';
 import LoadingSpinner from './components/LoadingSpinner';
+import { mockVerificationResult } from './utils/mockData';
 
 function App() {
   const [results, setResults] = useState(null);
@@ -15,28 +16,11 @@ function App() {
     setResults(null);
 
     try {
-      // TODO: Replace with actual API call
-      // For now, we'll use mock data
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate API delay
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
-      // Mock response - will be replaced with real API
-      const mockResults = {
-        trust_score: 0.75,
-        status: "completed",
-        results: {
-          citations: [],
-          facts: [],
-          links: []
-        },
-        metadata: {
-          total_citations: 0,
-          verified_citations: 0,
-          fake_citations: 0,
-          suspicious_citations: 0
-        }
-      };
-      
-      setResults(mockResults);
+      // Use mock data for now - will be replaced with real API call
+      setResults(mockVerificationResult);
     } catch (err) {
       setError(err.message || 'An error occurred during verification');
     } finally {
