@@ -8,6 +8,13 @@ VeriGen: ML-Based AI Hallucination Detection System
 ## Team Name
 Tech Titans
 
+# Project link
+
+Access the full set of project preview and ppt in this [Google Drive folder](https://drive.google.com/drive/folders/1sT8YvnGiYBJ2YRQ76uVR8MXzW2hoNSrP?usp=sharing).
+
+
+
+
 
 
 ## Project Overview
