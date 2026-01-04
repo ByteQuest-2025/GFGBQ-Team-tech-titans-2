@@ -11,16 +11,23 @@ Tech Titans
 
 
 ## Project Overview
+
 VeriGen is a high-performance FastAPI-based system designed to audit AI-generated text for accuracy. It uses a multi-layered Machine Learning approach to verify the three pillars of trust: Factual Claims, Citation Authenticity, and Link Accessibility. By combining Natural Language Processing (NLP) with real-time network verification, it provides a "Trust Score" to help users validate AI outputs.
 
 ## Key Features
+
 ML Hallucination Detection: Utilizes vectara/hallucination_evaluation_model to predict the probability of factual errors.
 
-## Zero-Shot Claim Classification: Categorizes sentences as factual, opinion, or statistical claims using facebook/bart-large-mnli.
+## Zero-Shot Claim Classification:
 
-## NER Citation Analysis: Extracts and validates entities (Authors, Organizations, Dates) using dslim/bert-base-NER.
+ Categorizes sentences as factual, opinion, or statistical claims using facebook/bart-large-mnli.
+
+## NER Citation Analysis:
+
+ Extracts and validates entities (Authors, Organizations, Dates) using dslim/bert-base-NER.
 
 ## Live URL Auditing: 
+
 Pings extracted links to identify broken or "ghost" references.
 
 Setup and Installation Instructions
