@@ -1,4 +1,4 @@
-##Problem Statement
+###Problem Statement
 
 Generative AI models often produce "Confident Hallucinations"—factually incorrect information, fake citations, and non-existent references presented as legitimate data. This creates significant misinformation risks, legal liabilities, and ethical concerns for users who rely on AI for research and decision-making. There is a critical need for a system that can detect, flag, and verify factual claims and citations to distinguish between reliable and unreliable AI-produced information.
 
